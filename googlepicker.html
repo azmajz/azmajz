@@ -69,7 +69,7 @@
         var fileId = data.docs[0].id;
         var ids ='';
         data.docs.forEach(element => {
-          ids+=element+'<br>';
+          ids+=element.id+'<br>';
         });
         document.querySelector('#result').innerHTML= ids;
         alert('You have selected: ' + data.docs.length +' files');
